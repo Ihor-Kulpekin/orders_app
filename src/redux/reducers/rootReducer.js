@@ -1,10 +1,6 @@
-import {combineReducers} from "redux";
-import orderReducer from "./orderReducer";
-import positionsOrderByOrderIdReducer from "./positionsOrderByOrderIdReducer";
-import visibilityPositionsReducer from "./visibilityPositionsReducer";
+import { combineReducers } from 'redux';
 
-export default combineReducers({
-    orders: orderReducer,
-    positions: positionsOrderByOrderIdReducer,
-    isOpen:visibilityPositionsReducer
-})
+import orders from './orders';
+import orderPositions from './order-positions';
+
+export default combineReducers({ orders, orderItems: orderPositions });

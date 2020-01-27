@@ -1,30 +1,43 @@
 import React, {Component} from "react";
-import {fetchOrders} from "../../redux/actions/orderActions";
 import {connect} from "react-redux";
-import ListOrders from "../components/listOrders/ListOrders";
-import {handleChangeVisibility} from "../../redux/actions/visibilityPositionsAction";
+import {getOrders} from "../../redux/actions/actions";
+import OrderCard from "../components/orderItem/OrderItem";
 
-class OrdersContainer extends Component{
 
+class OrdersContainer extends Component {
     componentDidMount() {
-        this.props.fetchOrders();
+        const { orders, getOrders } = this.props;
+        if (orders === null) {
+            getOrders();
+        }
     }
+
+    onFilterChange = (event) => {
+        const { getOrders } = this.props;
+        getOrders(event.target.value);
+    };
 
     render() {
-        return(
-            <div>
-                <ListOrders orders = {this.props.orders} isOpen = {this.props.handleChangeVisibility.bind(this)}/>
+        const { orders } = this.props;
+        return (
+            <div className="application">
+                <div className="header">
+                    <p>Заказы Filter:<input  onChange={this.onFilterChange}/></p>
+                </div>
+                {orders !== null && (
+                    orders.length
+                        ? orders.map(order => <OrderCard key={order.id} {...order} />)
+                        : (<h2>Таких заказов нет</h2>)
+                )}
             </div>
-        )
+        );
     }
-
 }
 
-const mapStateToProps = (state)=>({
-    orders:state.orders.orders,
-    isOpen:state.isOpen.isOpen
+const mstp = state => ({
+    orders: state.orders
 });
 
+const mdtp = { getOrders };
 
-
-export default connect(mapStateToProps,{fetchOrders,handleChangeVisibility})(OrdersContainer);
+export default connect(mstp,mdtp)(OrdersContainer)
