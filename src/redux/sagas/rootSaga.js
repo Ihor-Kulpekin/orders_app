@@ -7,7 +7,6 @@ import {getOrdersSaga} from "./ordersSaga";
 import {getOrderPositionsSaga} from "./orderPositionsSaga";
 
 
-
 export function* rootSaga() {
     yield all([
         yield debounce(300, AXIOS_ORDERS, getOrdersSaga),

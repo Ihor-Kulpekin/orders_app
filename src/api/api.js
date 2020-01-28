@@ -4,7 +4,7 @@ import * as axios from "axios";
 const commonGetJsonData = url => axios.default(url)
     .then((result) => {
         if (result.status!==200) {
-            return Promise.reject(result);
+            return result.status;
         }
         return result.data;
     })

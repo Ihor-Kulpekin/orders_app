@@ -9,7 +9,7 @@ const ListOrders = ()=>{
             {orders !== null && (
                 orders.length
                     ? orders.map(order => <OrderPositionsContainer key={order.id} {...order} />)
-                    : (<h2>Таких заказов нет</h2>)
+                    : (<h1>The orders are absent</h1>)
             )}
         </div>
     )
