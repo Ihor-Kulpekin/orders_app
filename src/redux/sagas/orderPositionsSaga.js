@@ -8,7 +8,7 @@ export function* getOrderPositionsSaga({ payload }) {
         const result = yield call(apiGetOrderItems, orderId);
         yield put(getOrderItems.success({
             orderId,
-            items: result
+            positions: result
         }));
     } catch (error) {
         yield put(getOrderItems.failure(error));

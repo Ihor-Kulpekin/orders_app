@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
 import orders from './orders';
-import orderPositions from './order-positions';
+import orderPositions from './orderPositions';
 
-export default combineReducers({ orders, orderItems: orderPositions });
+export default combineReducers({ orders, orderPositions });

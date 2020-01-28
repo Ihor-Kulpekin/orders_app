@@ -3,29 +3,22 @@ import {
     AXIOS_ORDER_ITEMS, AXIOS_ORDER_ITEMS_SUCCESS, AXIOS_ORDER_ITEMS_FAILURE
 } from './constants';
 
-/**
- * Получить список заказов
- * @param {string} filter - необязательно
- */
+
+//Get orders
 export const getOrders = filter => ({
     type: AXIOS_ORDERS,
     payload: { filter }
 });
 
-/**
- * Получить позиции заказа
- * @param {int} orderId
- */
+
+//Get order's positions
 export const getOrderItems = orderId => ({
     type: AXIOS_ORDER_ITEMS,
     payload: orderId
 });
 
-/**
- * Добавить дополнительные действия
- * @param {function} action
- * @param {object} what - { action: 'ACTION_CONST' }
- */
+
+//Add additional actions
 const addActions = (action, what) => {
     Object.keys(what).forEach((name) => {
         action[name] = payload => ({ type: what[name], payload });

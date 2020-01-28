@@ -2,39 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e077e8a0-8fc0-4963-a301-480350413359" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/order-positions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/orders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/sagas/orderPositionsSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/sagas/ordersSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui_react/components/orderItem/OrderItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui_react/components/orderPositionItem/OrderPositionItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/orderPositionItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/containers/OrderPositionsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/context/OrdersContext.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/orderActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/visibilityPositionsAction.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/orderReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/positionsOrderByOrderIdReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/order-positions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/orderPositions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/visibilityPositionsReducer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/header/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/header/header.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/arrow-29261_960_720.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/button-29139_960_720.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listPositions/ListPositionsOrder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listPositions/PositionsItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/orderPositionsSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/orderPositionsSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/orderItem/OrderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/orderPositionItem/OrderPositionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/OrderPositionItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/containers/PositionsOrderContainer.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +63,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ui_react/components/listOrders" />
+      <recent name="$PROJECT_DIR$/src/ui_react/components/listOrderPositions" />
       <recent name="$PROJECT_DIR$/src/redux/store" />
       <recent name="$PROJECT_DIR$/src/redux/sagas" />
       <recent name="$PROJECT_DIR$/src/api" />
-      <recent name="$PROJECT_DIR$/src/ui_react/components/listOrders" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -119,7 +102,17 @@
       <workItem from="1580090081462" duration="5931000" />
       <workItem from="1580130177655" duration="1342000" />
       <workItem from="1580139209462" duration="8960000" />
+      <workItem from="1580148203410" duration="75000" />
+      <workItem from="1580163433097" duration="16569000" />
     </task>
+    <task id="LOCAL-00001" summary="all done">
+      <created>1580148234852</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580148234852</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,20 +120,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="all done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="58" width="800" height="677" key="#ESLint" timestamp="1580089897072">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#ESLint/67.27.1299.741@67.27.1299.741" timestamp="1580089897072" />
-    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580147020095">
+    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580173205646">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580147020095" />
-    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1580004472675">
+    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580173205646" />
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1580148234271">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1580004472675" />
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1580148234271" />
     <state x="488" y="140" width="447" height="513" key="FileChooserDialogImpl" timestamp="1580004358096">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -149,25 +144,33 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="567" y="291" width="288" height="210" key="Github.ShareDialog/67.27.1299.741@67.27.1299.741" timestamp="1580004385509" />
-    <state width="1276" height="62" key="GridCell.Tab.0.bottom" timestamp="1580148176080">
+    <state width="1276" height="244" key="GridCell.Tab.0.bottom" timestamp="1580179401208">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="62" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580148176080" />
-    <state width="1276" height="62" key="GridCell.Tab.0.center" timestamp="1580148176079">
+    <state width="1276" height="244" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580179401208" />
+    <state width="1276" height="244" key="GridCell.Tab.0.center" timestamp="1580179401207">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="62" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580148176079" />
-    <state width="1276" height="62" key="GridCell.Tab.0.left" timestamp="1580148176079">
+    <state width="1276" height="244" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580179401207" />
+    <state width="1276" height="244" key="GridCell.Tab.0.left" timestamp="1580179401207">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="62" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580148176079" />
-    <state width="1276" height="62" key="GridCell.Tab.0.right" timestamp="1580148176079">
+    <state width="1276" height="244" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580179401207" />
+    <state width="1276" height="244" key="GridCell.Tab.0.right" timestamp="1580179401207">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="62" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580148176079" />
+    <state width="1276" height="244" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580179401207" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580148244063">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1580148244063" />
     <state x="380" y="175" key="run.anything.popup" timestamp="1580145680080">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1580145680080" />
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1580175097612">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="379" y="89" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1580175097612" />
   </component>
 </project>

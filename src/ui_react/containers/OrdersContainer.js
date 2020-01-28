@@ -1,7 +1,9 @@
 import React, {Component} from "react";
 import {connect} from "react-redux";
 import {getOrders} from "../../redux/actions/actions";
-import OrderCard from "../components/orderItem/OrderItem";
+import ListOrders from "../components/listOrders/ListOrders";
+import Header from "../components/header/Header";
+import OrdersContext from "../context/OrdersContext";
 
 
 class OrdersContainer extends Component {
@@ -20,24 +22,18 @@ class OrdersContainer extends Component {
     render() {
         const { orders } = this.props;
         return (
-            <div className="application">
-                <div className="header">
-                    <p>Заказы Filter:<input  onChange={this.onFilterChange}/></p>
-                </div>
-                {orders !== null && (
-                    orders.length
-                        ? orders.map(order => <OrderCard key={order.id} {...order} />)
-                        : (<h2>Таких заказов нет</h2>)
-                )}
-            </div>
+            <OrdersContext.Provider value={orders}>
+                <Header onFilterChange={this.onFilterChange}/>
+                <ListOrders/>
+            </OrdersContext.Provider>
         );
     }
 }
 
-const mstp = state => ({
+const mapStateToProps = state => ({
     orders: state.orders
 });
 
-const mdtp = { getOrders };
+const mapDispatchToProps = { getOrders };
 
-export default connect(mstp,mdtp)(OrdersContainer)
+export default connect(mapStateToProps,mapDispatchToProps)(OrdersContainer)
