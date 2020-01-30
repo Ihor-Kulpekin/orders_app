@@ -10,6 +10,7 @@ import * as sagas from '../sagas/rootSaga';
 const sagaMiddleware = createSagaMiddleware();
 const sagaConnect = () => Object.values(sagas).forEach(saga => sagaMiddleware.run(saga));
 
+
 const composeEnhancers = (typeof window === 'object')
 && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;

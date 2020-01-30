@@ -14,9 +14,13 @@ class OrderPositionsContainer extends Component{
     };
 
     render() {
+        const arrayProps = {
+            onToggle:this.onToggle,
+            props: this.props
+        };
         return (
-            <OrderPositionsContext.Provider value={this.props}>
-                <OrderItem onToggle={this.onToggle} {...this.props}/>
+            <OrderPositionsContext.Provider value={arrayProps}>
+                <OrderItem/>
             </OrderPositionsContext.Provider>
         )
     }

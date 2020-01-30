@@ -20,7 +20,7 @@ class OrdersContainer extends Component {
     };
 
     render() {
-        const { orders } = this.props;
+        const orders= this.props;
         return (
             <OrdersContext.Provider value={orders}>
                 <Header onFilterChange={this.onFilterChange}/>

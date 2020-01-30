@@ -3,7 +3,8 @@ import OrderPositionsContainer from "../../containers/OrderPositionsContainer";
 import OrdersContext from "../../context/OrdersContext";
 
 const ListOrders = ()=>{
-    const orders = useContext(OrdersContext);
+    const context = useContext(OrdersContext);
+    const orders = context.orders;
     return(
         <div>
             {orders !== null && (

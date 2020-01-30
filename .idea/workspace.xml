@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e077e8a0-8fc0-4963-a301-480350413359" name="Default Changelist" comment="all done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/OrderPositionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/OrderPositionItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/containers/OrderPositionsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/containers/OrderPositionsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +96,7 @@
       <workItem from="1580139209462" duration="8960000" />
       <workItem from="1580148203410" duration="75000" />
       <workItem from="1580163433097" duration="19164000" />
+      <workItem from="1580419242537" duration="8505000" />
     </task>
     <task id="LOCAL-00001" summary="all done">
       <created>1580148234852</created>
@@ -125,14 +128,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="58" width="800" height="677" key="#ESLint/67.27.1299.741@67.27.1299.741" timestamp="1580089897072" />
-    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580173205646">
+    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580422784288">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580173205646" />
-    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1580182542194">
+    <state x="748" y="189" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580422784288" />
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1580419249740">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1580182542194" />
+    <state x="281" y="27" width="860" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1580419249740" />
     <state x="488" y="140" width="447" height="513" key="FileChooserDialogImpl" timestamp="1580004358096">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -141,22 +144,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="567" y="291" width="288" height="210" key="Github.ShareDialog/67.27.1299.741@67.27.1299.741" timestamp="1580004385509" />
-    <state width="1276" height="9" key="GridCell.Tab.0.bottom" timestamp="1580182543472">
+    <state width="1276" height="114" key="GridCell.Tab.0.bottom" timestamp="1580422440852">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="9" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580182543472" />
-    <state width="1276" height="9" key="GridCell.Tab.0.center" timestamp="1580182543471">
+    <state width="1276" height="114" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
+    <state width="1276" height="114" key="GridCell.Tab.0.center" timestamp="1580422440852">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="9" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580182543471" />
-    <state width="1276" height="9" key="GridCell.Tab.0.left" timestamp="1580182543471">
+    <state width="1276" height="114" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
+    <state width="1276" height="114" key="GridCell.Tab.0.left" timestamp="1580422440851">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="9" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580182543471" />
-    <state width="1276" height="9" key="GridCell.Tab.0.right" timestamp="1580182543472">
+    <state width="1276" height="114" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580422440851" />
+    <state width="1276" height="114" key="GridCell.Tab.0.right" timestamp="1580422440852">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="9" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580182543472" />
+    <state width="1276" height="114" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
     <state width="1276" height="219" key="GridCell.Tab.1.bottom" timestamp="1580180654201">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -205,6 +208,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1276" height="219" key="GridCell.Tab.3.right/67.27.1299.741@67.27.1299.741" timestamp="1580180654203" />
+    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog" timestamp="1580419847913">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580419847913" />
     <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580180246397">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
