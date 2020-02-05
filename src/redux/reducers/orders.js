@@ -1,22 +1,14 @@
-import { AXIOS_ORDERS_SUCCESS } from '../actions/constants';
+import {GET_ORDERS_SUCCESS} from '../actions/constants';
 
 const initialState = null;
 
-/*  Описание заказов:
-    [
-        { id, docNum, docDate, description },
-        ...
-    ]
-*/
-
 export default function orders(state = initialState, action) {
-    switch (action.type) {
-        case AXIOS_ORDERS_SUCCESS: {
-            return action.payload;
-        }
-
-        default: {
-            return state;
-        }
+  switch (action.type) {
+    case GET_ORDERS_SUCCESS: {
+      return action.payload;
     }
+    default: {
+      return state;
+    }
+  }
 }

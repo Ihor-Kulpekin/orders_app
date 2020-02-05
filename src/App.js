@@ -1,10 +1,11 @@
 import React from 'react';
+
 import './App.css';
-import OrdersContainer from "./ui_react/containers/OrdersContainer";
+import OrdersContainer from './ui_react/containers/OrdersContainer';
 
 const App = ()=>{
       return (
-        <div className="App">
+        <div>
             <OrdersContainer/>
         </div>
     );

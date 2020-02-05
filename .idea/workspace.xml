@@ -2,12 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e077e8a0-8fc0-4963-a301-480350413359" name="Default Changelist" comment="all done">
+      <change afterPath="$PROJECT_DIR$/orders.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrders/OrderItem/OrderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/orderPositions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/orderPositions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/orderPositionsSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/orderPositionsSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/ordersSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/ordersSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sagas/rootSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/ListOrderPositions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrderPositions/ListOrderPositions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/OrderPositionItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrderPositions/OrderPositionItem/OrderPositionItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrderPositions/orderPositionItem/orderPositionItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrderPositions/OrderPositionItem/OrderPositionItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/ListOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrders/ListOrders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/OrderItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui_react/components/listOrders/orderItem/orderItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/components/ListOrders/OrderItem/OrderItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui_react/containers/OrderPositionsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/containers/OrderPositionsContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui_react/containers/OrdersContainer.js" afterDir="false" />
     </list>
@@ -144,22 +161,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="567" y="291" width="288" height="210" key="Github.ShareDialog/67.27.1299.741@67.27.1299.741" timestamp="1580004385509" />
-    <state width="1276" height="114" key="GridCell.Tab.0.bottom" timestamp="1580422440852">
+    <state width="1276" height="134" key="GridCell.Tab.0.bottom" timestamp="1580941475734">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="114" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
-    <state width="1276" height="114" key="GridCell.Tab.0.center" timestamp="1580422440852">
+    <state width="1276" height="134" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1580941475734" />
+    <state width="1276" height="134" key="GridCell.Tab.0.center" timestamp="1580941475733">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="114" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
-    <state width="1276" height="114" key="GridCell.Tab.0.left" timestamp="1580422440851">
+    <state width="1276" height="134" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1580941475733" />
+    <state width="1276" height="134" key="GridCell.Tab.0.left" timestamp="1580941475732">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="114" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580422440851" />
-    <state width="1276" height="114" key="GridCell.Tab.0.right" timestamp="1580422440852">
+    <state width="1276" height="134" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1580941475732" />
+    <state width="1276" height="134" key="GridCell.Tab.0.right" timestamp="1580941475733">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="114" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580422440852" />
+    <state width="1276" height="134" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1580941475733" />
     <state width="1276" height="219" key="GridCell.Tab.1.bottom" timestamp="1580180654201">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -208,10 +225,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1276" height="219" key="GridCell.Tab.3.right/67.27.1299.741@67.27.1299.741" timestamp="1580180654203" />
-    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog" timestamp="1580419847913">
+    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog" timestamp="1580941250070">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580419847913" />
+    <state x="489" y="109" width="444" height="574" key="RollbackChangesDialog/67.27.1299.741@67.27.1299.741" timestamp="1580941250070" />
     <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580180246397">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

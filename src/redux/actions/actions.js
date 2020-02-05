@@ -1,36 +1,34 @@
 import {
-    AXIOS_ORDERS, AXIOS_ORDERS_SUCCESS, AXIOS_ORDERS_FAILURE,
-    AXIOS_ORDER_ITEMS, AXIOS_ORDER_ITEMS_SUCCESS, AXIOS_ORDER_ITEMS_FAILURE
+  GET_ORDER_ITEMS,
+  GET_ORDER_ITEMS_FAILURE,
+  GET_ORDER_ITEMS_SUCCESS,
+  GET_ORDERS,
+  GET_ORDERS_FAILURE,
+  GET_ORDERS_SUCCESS
 } from './constants';
 
-
-//Get orders
-export const getOrders = filter => ({
-    type: AXIOS_ORDERS,
-    payload: { filter }
+export const getOrders = (filter) => ({
+  type: GET_ORDERS,
+  payload: {filter}
 });
 
-
-//Get order's positions
-export const getOrderItems = orderId => ({
-    type: AXIOS_ORDER_ITEMS,
-    payload: orderId
+export const getOrderItems = (orderId) => ({
+  type: GET_ORDER_ITEMS,
+  payload: orderId
 });
 
-
-//Add additional actions
 const addActions = (action, what) => {
-    Object.keys(what).forEach((name) => {
-        action[name] = payload => ({ type: what[name], payload });
-    });
+  Object.keys(what).forEach((name) => {
+    action[name] = payload => ({type: what[name], payload});
+  });
 };
 
 addActions(getOrders, {
-    success: AXIOS_ORDERS_SUCCESS,
-    failure: AXIOS_ORDERS_FAILURE
+  success: GET_ORDERS_SUCCESS,
+  failure: GET_ORDERS_FAILURE
 });
 
 addActions(getOrderItems, {
-    success: AXIOS_ORDER_ITEMS_SUCCESS,
-    failure: AXIOS_ORDER_ITEMS_FAILURE
+  success: GET_ORDER_ITEMS_SUCCESS,
+  failure: GET_ORDER_ITEMS_FAILURE
 });
