@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
+
 import {getOrders} from '../../redux/actions/actions';
 import ListOrders from '../components/ListOrders/ListOrders';
 import Header from '../components/Header/Header';
-import OrdersContext from '../context/OrdersContext';
 
 class OrdersContainer extends Component {
   componentDidMount() {
@@ -19,12 +20,12 @@ class OrdersContainer extends Component {
   };
 
   render() {
-    const orders = this.props;
+    const {orders} = this.props;
     return (
-      <OrdersContext.Provider value={orders}>
+      <>
         <Header onFilterChange={this.onFilterChange}/>
-        <ListOrders/>
-      </OrdersContext.Provider>
+        <ListOrders orders={orders}/>
+      </>
     );
   }
 }
@@ -34,5 +35,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {getOrders};
+
+OrdersContainer.propTypes = {
+  getOrders:PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(OrdersContainer)

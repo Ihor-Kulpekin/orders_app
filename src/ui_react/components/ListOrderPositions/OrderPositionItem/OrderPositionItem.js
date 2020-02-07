@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import orderPositionItem from './OrderPositionItem.module.css';
+import ListItem from "@material-ui/core/ListItem";
 
 const OrderPositionItem = (props) => {
   const {
@@ -8,10 +9,14 @@ const OrderPositionItem = (props) => {
   } = props;
 
   return (
-    <div className={orderPositionItem.listItem}>
+    <ListItem>
       {item.name} {item.qty} {item.price} {item.sum}
-    </div>
+    </ListItem>
   );
+};
+
+OrderPositionItem.propTypes = {
+  item:PropTypes.object.isRequired
 };
 
 export default OrderPositionItem

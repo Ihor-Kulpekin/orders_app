@@ -6,6 +6,9 @@
 .pnp.js
 /.idea
 
+#logger
+/log
+
 # testing
 /coverage
 

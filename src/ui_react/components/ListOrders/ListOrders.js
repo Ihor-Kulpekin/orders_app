@@ -1,16 +1,14 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
 import OrderPositionsContainer from '../../containers/OrderPositionsContainer';
-import OrdersContext from '../../context/OrdersContext';
 
-const ListOrders = () => {
-  const context = useContext(OrdersContext);
-  const orders = context.orders;
+const ListOrders = (props) => {
+  const {orders} = props;
   return (
-    <div>
+    <div style={{marginTop:65+'px'}}>
       {orders !== null && (
         orders.length
-          ? orders.map(order => <OrderPositionsContainer key={order.id} {...order} />)
+          ? orders.map(order => <OrderPositionsContainer key={order.id} order={order}/>)
           : (<h1>The orders are absent</h1>)
       )}
     </div>

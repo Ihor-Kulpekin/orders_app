@@ -1,11 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 
 import OrderPositionItem from './OrderPositionItem/OrderPositionItem';
-import OrderPositionsContext from '../../context/OrderPositionsContext';
 
-const ListOrderPositions = () => {
-  const context = useContext(OrderPositionsContext);
-  const {positions} = context.props;
+const ListOrderPositions = (props) => {
+  const {positions} = props;
   return (
     <div>
       {

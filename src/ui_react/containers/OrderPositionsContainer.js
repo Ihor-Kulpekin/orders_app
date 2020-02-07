@@ -1,36 +1,38 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 
 import {getOrderItems} from '../../redux/actions/actions';
 import OrderItem from '../components/ListOrders/OrderItem/OrderItem';
-import OrderPositionsContext from '../context/OrderPositionsContext';
 
 class OrderPositionsContainer extends Component {
 
   onToggle = (event, expanded) => {
-    const {id, positions, getOrderItems} = this.props;
+    const {order, positions, getOrderItems} = this.props;
     if (expanded && !positions) {
-      getOrderItems(id);
+      getOrderItems(order.id);
     }
   };
 
   render() {
-    const arrayProps = {
-      onToggle: this.onToggle,
-      props: this.props
-    };
+    const {order,positions} = this.props;
     return (
-      <OrderPositionsContext.Provider value={arrayProps}>
-        <OrderItem/>
-      </OrderPositionsContext.Provider>
+      <>
+        <OrderItem order={order} onToggle={this.onToggle}  positions={positions}/>
+      </>
     )
   }
 }
 
 const mapStateToProps = (state, props) => ({
-  positions: state.orderPositions[props.id]
+  positions: state.orderPositions[props.order.id]
 });
 
 const mapDispatchToProps = {getOrderItems};
+
+OrderPositionsContainer.propTypes = {
+  order:PropTypes.object.isRequired,
+  getOrderItems:PropTypes.func.isRequired
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(OrderPositionsContainer)

@@ -1,29 +1,46 @@
-import React, {useContext} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import {ExpansionPanel} from '@material-ui/core';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import List from '@material-ui/core/List';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import makeStyles from '@material-ui/core/styles/makeStyles';
 
-import orderItem from './OrderItem.module.css';
 import ListOrderPositions from '../../ListOrderPositions/ListOrderPositions';
-import OrderPositionsContext from '../../../context/OrderPositionsContext';
 
+const useStyles = makeStyles(() => ({
+  typography: {
+    '&:hover': {
+      background: "#f5fcf4",
+    }
+  }
+}));
 
-const OrderItem = () => {
-  const context = useContext(OrderPositionsContext);
-  const {docNum, docDate, description} = context.props;
+const OrderItem = (props) => {
+  const {order,onToggle,positions} = props;
+  const classes = useStyles();
   return (
-    <ExpansionPanel onChange={context.onToggle} className={orderItem.expansionPanel}>
-      <ExpansionPanelSummary expandIcon={<ExpandMoreIcon/>}>
-        {docNum} {docDate} {description}
-      </ExpansionPanelSummary>
+    <ExpansionPanel onChange={onToggle}>
+      <Typography className={classes.typography} >
+        <ExpansionPanelSummary expandIcon={<ExpandMoreIcon/>}>
+          {order.docNum} {order.docDate} {order.description}
+        </ExpansionPanelSummary>
+      </Typography>
       <ExpansionPanelDetails>
-        <ListOrderPositions/>
+        <List>
+          <ListOrderPositions positions={positions}/>
+        </List>
       </ExpansionPanelDetails>
     </ExpansionPanel>
   )
 };
 
+OrderItem.propTypes = {
+  order:PropTypes.object.isRequired,
+  onToggle:PropTypes.func.isRequired,
+};
 
 export default OrderItem
