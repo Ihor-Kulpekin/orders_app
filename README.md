@@ -8,5 +8,3 @@ java -jar orders.jar
 npm install 
 
 npm start
-
-React application
