@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import {getOrders} from '../../redux/actions/actions';
 import ListOrders from '../components/ListOrders/ListOrders';
-import Header from '../components/Header/Header';
 
 class OrdersContainer extends Component {
   componentDidMount() {
@@ -14,16 +13,10 @@ class OrdersContainer extends Component {
     }
   }
 
-  onFilterChange = (event) => {
-    const {getOrders} = this.props;
-    getOrders(event.target.value);
-  };
-
   render() {
     const {orders} = this.props;
     return (
       <>
-        <Header onFilterChange={this.onFilterChange}/>
         <ListOrders orders={orders}/>
       </>
     );

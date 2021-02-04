@@ -8,6 +8,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import makeStyles from '@material-ui/core/styles/makeStyles';
+import {compose, withHandlers, withProps, withState} from "recompose";
+import {connect} from "react-redux";
+import {getOrders} from "../../../redux/actions/actions";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,8 +51,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const Header = (props) => {
-  const {onFilterChange} = props;
+const Header = ({onChange, value}) => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -62,12 +64,12 @@ const Header = (props) => {
             <div className={classes.searchIcon}>
               <SearchIcon/>
             </div>
-            <InputBase
+            <InputBase value={value}
               placeholder="Search…"
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
-              }} onChange={onFilterChange}
+              }} onChange={onChange}
               inputProps={{'aria-label': 'search'}}
             />
           </div>
@@ -78,7 +80,22 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  onFilterChange:PropTypes.func.isRequired
+  onFilterChange:PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired
 };
 
-export default Header;
+const enhance = compose(
+    connect(undefined, {getOrders}),
+    withProps((props)=>({
+      getOrders:props.getOrders
+    })),
+    withState('value', 'setValue', ''),
+    withHandlers({
+      onChange: ({setValue,getOrders}) =>(event) => {
+         setValue(event.target.value);
+         getOrders(event.target.value)
+      }
+    })
+)
+
+export default enhance(Header);
