@@ -19,8 +19,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const OrderItem = (props) => {
-  const {order,onToggle,positions} = props;
+const OrderItem = ({order,onToggle,positions}) => {
   const classes = useStyles();
   return (
     <ExpansionPanel onChange={onToggle}>
@@ -40,7 +39,8 @@ const OrderItem = (props) => {
 
 OrderItem.propTypes = {
   order:PropTypes.object.isRequired,
-  onToggle:PropTypes.func.isRequired,
+  onToggle:PropTypes.func,
+  positions: PropTypes.array
 };
 
 export default OrderItem

@@ -80,7 +80,7 @@ const Header = ({onChange, value}) => {
 };
 
 Header.propTypes = {
-    onFilterChange: PropTypes.func.isRequired,
+    onFilterChange: PropTypes.func,
     value: PropTypes.string.isRequired
 };
 
